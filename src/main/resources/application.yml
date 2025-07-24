@@ -17,14 +17,11 @@ spring:
   datasource:
     username: test
     password: test123
-    url: jdbc:postgresql://localhost:5432/polardb_catalog
+    url: jdbc:postgresql://192.168.56.128:5432/polardb_catalog
     hikari:
       connection-timeout: 2000
       maximum-pool-size: 5
 
-  sql:
-    init:
-      mode: always
 
 server:
   port: 9001
