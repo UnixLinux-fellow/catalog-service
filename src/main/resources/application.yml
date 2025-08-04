@@ -2,6 +2,12 @@ spring:
   application:
     name: catalog-service
 
+#  config:
+#    import: "optional:configserver:"
+#  cloud:
+#    config:
+#      uri: http://localhost:8888
+
 server:
   port: 9001
   tomcat:
@@ -10,3 +16,7 @@ server:
     threads:
       max: 50
       min-spare: 5
+
+
+polar:
+  greeting: Welcome to the local book catalog!
